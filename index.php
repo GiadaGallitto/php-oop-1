@@ -4,12 +4,20 @@
         public $genre;
         public $vote;
 
-        function __construct($_name, $_genre, $_vote) {
+        public function __construct($_name, $_genre, $_vote) {
             $this->name = $_name;
             $this->genre = $_genre;
             $this->vote = $_vote;
         }
+
+        public function getName(){
+
+        }
     }
+
+    $IronMan = new Movie('Iron Man', ['action', 'Adventure', 'Science Fiction'], 8);
+    $HarryPotter = new Movie('Harry Potter', ['fantasy', 'Adventure', 'Action'], 10);
+    var_dump($IronMan, $HarryPotter);
 ?>
 
 <!DOCTYPE html>
