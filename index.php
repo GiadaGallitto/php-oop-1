@@ -11,13 +11,16 @@
         }
 
         public function getName(){
-
+            return $this->name;
         }
     }
 
     $IronMan = new Movie('Iron Man', ['action', 'Adventure', 'Science Fiction'], 8);
     $HarryPotter = new Movie('Harry Potter', ['fantasy', 'Adventure', 'Action'], 10);
-    var_dump($IronMan, $HarryPotter);
+    echo($IronMan->getName());
+    var_dump($IronMan);
+    echo($HarryPotter->getName());
+    var_dump($HarryPotter)
 ?>
 
 <!DOCTYPE html>
